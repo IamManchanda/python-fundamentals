@@ -2,13 +2,14 @@ from random import randint
 
 player_wins = 0
 computer_wins = 0
+winning_score = 3
 
 def gameResult(winner):
     if winner == 'player': print('Player, you won this time')
     elif winner == 'computer': print('Computer got it right this time')
     elif winner == 'tie': print("It's a tie")
 
-while player_wins < 3 and computer_wins < 3:
+while player_wins < winning_score and computer_wins < winning_score:
     print("The available options are")
     print("...rock...")
     print("...paper...")
